@@ -165,6 +165,7 @@ Your local instructor will evaluate your project (for the most part) using the f
 - Are `sklearn` methods used appropriately?
 
 **Presentation**
+- Is there a VIDEO PRESENTATION?  (go through zoom to create the presentation)
 - Is the problem statement clearly presented?
 - Does a strong narrative run through the presentation building toward a final conclusion?
 - Are the conclusions/recommendations clearly stated?

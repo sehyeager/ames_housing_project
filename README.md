@@ -4,6 +4,9 @@ For this project, I am pretending that I am advising homeowners who want to impr
 
 The process begins by cleaning the data, examining outliers and adjusting nulls.  I soon decided to limit the scope of my data to less than 40 features, as beyond that the amount of noise and information would become too much to parse through.  I built a simple linear regression model that served to predict, with reasonable accuracy, the sale price of a home.  By building that model, I then examined the coefficients and relationships of the features that could be improved by a homeowner, such as garage quality and condition, porch square footage and type, and general property condition.
 
+
+https://git.generalassemb.ly/sehyeager/project_2/blob/master/Samuel-yeager-Code.ipynb
+
 ## In Conclusion
 Ultimately, I found that a homeowner has limited ability to improve the sale price on their own.  The general condition of their home can help avoid a bankrupting low price, but going beyond the average standards for condition and quality do not greatly increase value.  As such, my recommendation is to make sure your home meets those average standards, and not to spend much of your money making the condition and quality of your home exceptional.  This way, you have the best chance of the best return on your investment.
 
@@ -49,10 +52,3 @@ Ultimately, I found that a homeowner has limited ability to improve the sale pri
 
 ## Sources
 http://jse.amstat.org/v19n3/decock/DataDocumentation.txt
-
-
-
-
-
-
-./Samuel-yeager-code.ipynb

@@ -1,14 +1,18 @@
 # What can a homeowner do to improve their sale price?
 
-For this project, I am pretending that I am advising homeowners who want to improve the sale value of their home through home improvement and diy projects.
+For this project, I am pretending that I am advising homeowners, specifically in Ames, Iowa, who want to improve the sale value of their home through home improvement and diy projects.  The most pertinent question is this:  What projects can I spend my limited resources on that will improve my home's value so that I can profit from its sale?  In short, what projects will give me the most bang for my buck?
 
-The process begins by cleaning the data, examining outliers and adjusting nulls.  I soon decided to limit the scope of my data to less than 40 features, as beyond that the amount of noise and information would become too much to parse through.  I built a simple linear regression model that served to predict, with reasonable accuracy, the sale price of a home.  By building that model, I then examined the coefficients and relationships of the features that could be improved by a homeowner, such as garage quality and condition, porch square footage and type, and general property condition.
+The process begins by cleaning the data, sourced from here (https://www.kaggle.com/c/dsir-202021214-e-project-2-regression-challenge/data), examining outliers and adjusting nulls.  The training data was over 2051 rows long, and the given 80 columns made it a little too feature rich to be really malleable. Thus, I limited my scope to under 40 columns.  I engineered a couple interaction terms, as well as one-hot encoded a feature concerning masonry veneer.  The target variable in this scenario is the Sale Price of the house.
+
+
+I built four models:  the first was a simple linear regression, unscaled and and unregularized.  The second, a linear regression model with standard scaling applied to the features.  Third and fourth, a Lasso and a Ridge model.  Of all these, the basic linear model performed the best on the testing data.  All the models had r2 scores over 80, and better on the side of the testing data, but the linear one was the most reliable.  The scaled model performed better by an extremely small margin, so in the interest of simplicity I did not rely upon it. I then examined the coefficients and relationships of the features that could be improved by a homeowner, such as garage quality and condition, porch square footage and type, and general property condition.
 
 
 https://git.generalassemb.ly/sehyeager/project_2/blob/master/Samuel-yeager-Code.ipynb
 
 ## In Conclusion
 Ultimately, I found that a homeowner has limited ability to improve the sale price on their own.  The general condition of their home can help avoid a bankrupting low price, but going beyond the average standards for condition and quality do not greatly increase value.  As such, my recommendation is to make sure your home meets those average standards, and not to spend much of your money making the condition and quality of your home exceptional.  This way, you have the best chance of the best return on your investment.
+In the future, if I were to take this model into production, I would take time to include more of the features provided by the original dataset, and I would also hope to get similar housing data from other small cities throughout the midwest.  As it stands, the model would only be useful in Ames, Iowa, but the tool would be more useful if it could be applied more generally to different places.
 
 ## Dictionary
 | Key             | Description                                                            |
